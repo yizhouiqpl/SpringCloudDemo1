@@ -13,7 +13,9 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("consumer/payment")
 public class OrderController {
 
-    public static final String PaymentSrv_URL = "http://localhost:8001";
+//    注意一旦使用集群eureka，此处不应写死
+//    public static final String PaymentSrv_URL = "http://localhost:8001";
+    public static final String PaymentSrv_URL = "http://CLOUD-PAYMENT-SERVICE";
 
     @Autowired
     private RestTemplate restTemplate;
