@@ -7,4 +7,4 @@ spring:
     name: cloud-provider-payment
   cloud:
     zookeeper:
-      connect-string: 116.62.101.149:2181 # Zookeeper默认端口号
+      connect-string: 192.168.254.91:2181 # Zookeeper默认端口号
